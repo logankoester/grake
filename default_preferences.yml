@@ -1,0 +1,3 @@
+--- 
+window_shape: 1 # 0 = "Short & wide", 1 = "Tall & thin"
+terminal_emulator: "xterm -e"

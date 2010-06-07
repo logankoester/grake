@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'gtk2'
+
+path = File.expand_path(File.dirname(__FILE__))
+require "#{path}/../lib/grake"
+
+PROG_NAME = "grake"
+PROG_ICON = "#{path}/glade/grake-icon.png"
+PREFS_FNAME = "/home/logankoester/.grake"
+PROJECT_PATH = Dir.pwd
+
+@rakefile = Grake::Rakefile.new
+GrakeRootWindow.new(@rakefile.tasks.tree)
+Gtk.main
+

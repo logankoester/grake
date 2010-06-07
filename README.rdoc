@@ -1,6 +1,6 @@
 = grake
 
-Description goes here.
+Warning: Unstable and a little bit of a mess.
 
 == Note on Patches/Pull Requests
  
